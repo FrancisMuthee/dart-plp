@@ -3,7 +3,7 @@ void main() {
   multiplyTwo(50, 25);
   subtractTwo(65, 10);
   divideTwo(91, 13);
-  // getFirstElement([1, 2, 3, 4, 5]);
+  getFirstElement([1, 2, 3, 4, 5]);
   String exampleString = "Hello, World!";
 }
 
@@ -51,8 +51,11 @@ void mai() {
 
 // Task 6
 // Write a function called getFirstElement that takes a list as an argument and returns the first element of that list.
+T? getFirstElement<T>(List<T> list) {
+ return list.isEmpty ? null : list.first;
+}
 
-void main() {
+void min() {
  List<int> numbers = [1, 2, 3];
  int? firstNumber = getFirstElement(numbers);
  print("The first number is: $firstNumber");
