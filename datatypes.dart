@@ -35,5 +35,80 @@ void main() {
   void printName() {
     print('My name is El');
   }
+
   printName();
+
+  //FUNCTIONS
+  //Functions with a parameter and a return type.
+  int add(int a, int b) {
+    var total;
+    total = a + b;
+    return total;
+  }
+
+  // Functions with a parameter and no return type
+  void mul(int a, int b) {
+    var total;
+    total = a * b;
+    print('Multiplication is: $total');
+  }
+
+  //Functions with no parameter and return type
+  String greet() {
+    String greet = 'welcome';
+    return greet;
+  }
+
+  //Functions with no parameter and no return type
+  void greetings() {
+    print('Hello all!');
+  }
+
+  var total = add(2, 3);
+  print('Total sum: $total');
+  mul(2, 3);
+  print('Greeting: $greetings');
+  greetings();
+
+  //Anpnymous function
+  const fruits = ['Apple', 'Orange', 'Banana', 'Mango'];
+  fruits.forEach((fruit) {
+    print(fruit);
+  });
+
+//List of cars
+  List cars = ['Toyota', 'BMW', 'Audi', 'VW'];
+  //iteration as a parameter with anonymous function
+  cars.forEach((car) {
+    print(car);
+  });
+
+  //Arrow function
+
+  double calculateInterest(double principal, double rate, double time) {
+    double interest = principal * rate * time / 100;
+    return interest;
+  }
+
+  {
+    double principal = 5000;
+    double time = 3;
+    double rate = 3;
+
+    double result = calculateInterest(principal, rate, time);
+    print('The simple interest is $result');
+  }
+
+//Using arrow function
+  double calculateInteresta(double principal, double rate, double time) =>
+      principal * rate * time / 100;
+
+  {
+    double principal = 5000;
+    double time = 3;
+    double rate = 3;
+
+    double result = calculateInteresta(principal, rate, time);
+    print('The simple interest is $result');
+  }
 }
