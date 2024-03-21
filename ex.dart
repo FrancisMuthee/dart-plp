@@ -14,7 +14,8 @@ class Instructor {
   }
 }
 
-//Main Function
-void main() {
-  var instructor = Instructor(this.name, this.phone, this.isMarried, this.age);
-}
+// //Main Function
+// void main() {
+//   var instructor = Instructor(this.name, this.phone, this.isMarried, this.age);
+// }
+
