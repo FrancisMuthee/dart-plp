@@ -51,7 +51,7 @@ class Dog extends Mammal implements Animal {
 }
 
 // Step 4: Initialize an instance of a class with data from a file
-// This part is simplified for demonstration. In a real application, you would read from a file.
+
 String dogName = 'Buddy';
 Dog buddy = Dog(dogName);
 
